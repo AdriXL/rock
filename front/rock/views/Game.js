@@ -68,7 +68,7 @@ const Game = {
         },
         round: function () {
             this.thinking = true;
-            axios.get('http://localhost:8080/DemoRest/rest/game/round') // call to rest api
+            axios.get(rest_round) // call to rest api (round)
             .then((response) => {
                 this.player1 = response.data.player1;
                 this.player2 = response.data.player2;

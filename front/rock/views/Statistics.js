@@ -22,12 +22,13 @@ const Statistics = {
         }
     },
     mounted: function () {
-        axios.get('http://localhost:8080/DemoRest/rest/game/info')
+        axios.get(rest_info) // call to rest api (info)
         .then((response) => {
             this.info = response.data;
         })
-        .catch(function (error) {
+        .catch((error) => {
             console.log('Error: ' + error);
+            this.info = {'Something went wrong': error}
         });
     }
 }

@@ -12,6 +12,6 @@ const Home = {
         }
     },
     mounted: function () {
-        // 
+        //
     }
 }

@@ -12,10 +12,9 @@ Back-end: everything else but 'front' folder. Maven is used and the war file in 
 DEPLOYMENT INSTRUCTIONS
 =======================
 
-- Copy the war file (DemoRest.war) into a local Tomcat using the port 8080
-- Copy the front-end folder (/front/rock) into the same local Tomcat (using port 8080) or another Tomcat (using a different port, 8090 for instance)
-
-In future releases, this wont be hardcoded.
+- Copy the war file (DemoRest.war) into a Tomcat
+- Copy the front-end folder (/front/rock) into the same Tomcat or a different one
+	- Open the file 'environment.js' and change the IP/PORT for the rest api calls (if apply).
 
 
 
@@ -24,5 +23,6 @@ ACCESSING THE APP
 
 http://machine_ip:port/rock
 
-let 'machine_ip' be the ip of the machine where the front-end Tomcat is running.
-let 'port' be the port used by the Tomcat where the front-end is deployed.
+Where:
+'machine_ip' is the ip configured in environment.js file for rest api calls.
+'port' is the port configured in environment.js file for rest api calls.
