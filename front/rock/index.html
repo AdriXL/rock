@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rock Paper Scissor</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router@2.0.0/dist/vue-router.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="./views/Home.js"></script> <!-- home view definition (using .js format instead of .vue single file because webpack is not used) -->
+    <script src="./views/Game.js"></script> <!-- game view definition (.js format) -->
+    <script src="./views/Statistics.js"></script> <!-- statistics view definition (.js format) -->
+
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div id="app">
+    <!-- link to game view -->
+    <router-link to="/Game"><img class="nav" src="./img/players.png" alt="Go to game" title="Go to game" width="100px"/></router-link>
+    <!-- link to statistics view -->
+    <router-link to="/Statistics"><img class="nav" src="./img/analytics.jpg" alt="Go to analytics" title="Go to analytics" width="100px"/></router-link>
+
+    <!-- app view -->
+    <keep-alive include="Game">
+        <router-view></router-view>
+    </keep-alive>
+</div>
+<script src="app.js"></script> <!-- script for vue initialization -->
+</body>
+</html>
