@@ -24,5 +24,5 @@ ACCESSING THE APP
 http://machine_ip:port/rock
 
 Where:
-'machine_ip' is the ip configured in environment.js file for rest api calls.
-'port' is the port configured in environment.js file for rest api calls.
+- 'machine_ip' is the ip configured in environment.js file for rest api calls.
+- 'port' is the port configured in environment.js file for rest api calls.
