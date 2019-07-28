@@ -1,6 +1,8 @@
 # rock
 Rock Paper Scissor Game
 
+![Alt text](front/rock/img/wallpaper.png?raw=true "Rock Paper Scissor!")
+
 The Eclipse project has two parts: the front-end and the back-end.
 
 Front-end: located in 'front' folder. It contains another folder (rock) which can be copied into Tomcat directly. The front-end is not based on webpack, just to keep it simple.
@@ -26,3 +28,14 @@ http://machine_ip:port/rock
 Where:
 - 'machine_ip' is the ip configured in environment.js file for rest api calls.
 - 'port' is the port configured in environment.js file for rest api calls.
+
+
+
+SCREENSHOTS
+===========
+<kbd><img src="screenshots/Home.jpg" style="border: 1px solid grey; margin-bottom: 15px;" /></kbd>
+	
+<kbd><img src="screenshots/Game.jpg" style="border: 1px solid grey; margin-bottom: 15px;" /></kbd>
+	
+<kbd><img src="screenshots/Statistics.jpg" style="border: 1px solid grey; margin-bottom: 15px;" /></kbd>
+	
