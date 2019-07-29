@@ -18,14 +18,16 @@
 <body>
 <div id="app">
     <!-- link to game view -->
-    <router-link to="/Game"><img class="nav" src="./img/players.png" alt="Go to game" title="Go to game" width="100px"/></router-link>
+    <router-link to="/Game" active-class="active-link"><img class="nav" src="./img/players.png" alt="Go to game" title="Go to game" width="100px"/></router-link>
     <!-- link to statistics view -->
-    <router-link to="/Statistics"><img class="nav" src="./img/analytics.jpg" alt="Go to analytics" title="Go to analytics" width="100px"/></router-link>
+    <router-link to="/Statistics" active-class="active-link"><img class="nav" src="./img/analytics.jpg" alt="Go to analytics" title="Go to analytics" width="100px"/></router-link>
 
-    <!-- app view -->
-    <keep-alive include="Game">
-        <router-view></router-view>
-    </keep-alive>
+    <transition name="fade" mode="out-in">
+        <!-- app view -->
+        <keep-alive include="Game">
+            <router-view></router-view>
+        </keep-alive>
+    </transition>
 </div>
 <script src="app.js"></script> <!-- script for vue initialization -->
 </body>
